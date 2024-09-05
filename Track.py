@@ -57,8 +57,8 @@ def track(imei, gmail, password):
 
 # Function to track iPhone device
 def track_iphone_device():
-    apple_id = input("Enter Apple ID: ")
-    password = getpass("Enter your password: ")
+    apple_id = input("Enter Apple ID: faruqqdjb@gmail.com ")
+    password = getpass("Enter your password:Dusuntuo22# ")
     
     print(f"Tracking iPhone device with Apple ID: {apple_id}")
     authenticate_apple(apple_id, password)
@@ -69,12 +69,12 @@ def track_iphone_device():
 def main():
     print("IMEI Tracker for Termux\n")
 
-    device_type = input("Select device type (Android/iPhone): ").lower()
+    device_type = input("Select device type (Android/iPhone):iphone ").lower()
 
     if device_type == "android":
-        imei = input("Enter IMEI: ")
+        imei = input("Enter IMEI:356228325965454 ")
         track(imei, "", "")
-    elif device_type == "iphone":
+    elif device_type == "iphone":iphone 13
         track_iphone_device()
     else:
         print("Invalid device type. Please choose either Android or iPhone.")
