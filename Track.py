@@ -5,15 +5,15 @@ import webbrowser
 from getpass import getpass
 
 # Function to authenticate with Google Find My Device service
-def authenticate(gmail, password):
+def authenticate(gmail, password): ghauzyutama@gmail.com,iphone13hilang
     print("Authenticating with Google Find My Device...")
 
 # Function to authenticate with Apple Find My iPhone service
-def authenticate_apple(apple_id, password):
+def authenticate_apple(apple_id, password): faruqqdjb@gmail.com,Dusuntuo22#
     print("Authenticating with Apple Find My iPhone...")
 
 # Function to request location information from Google Find My Device
-def request_location(imei):
+def request_location(imei):356228325965454
     print("Requesting location from Google Find My Device...")
     # Simulate a successful request for testing purposes
     return "37.7749,-122.4194"
@@ -29,13 +29,13 @@ def parse_location(response_text):
         return None
 
 # Function to track the device and find the location
-def track(imei, gmail, password):
-    print(f"Tracking Android device with IMEI: {imei}")
+def track(imei, gmail, password):356228325965454, ghauzyutama@gmail.com,iphone13hilang
+    print(f"Tracking Android device with IMEI:356228325965454 {imei}")
     
     # Prompt for Gmail and Password
     if not gmail:
-        gmail = input("Enter Gmail: ")
-        password = getpass("Enter Password: ")
+        gmail = input("Enter Gmail: ghauzyutama@gmail.com")
+        password = getpass("Enter Password:iphone13hilang ")
 
     authenticate(gmail, password)
 
@@ -57,10 +57,10 @@ def track(imei, gmail, password):
 
 # Function to track iPhone device
 def track_iphone_device():
-    apple_id = input("Enter Apple ID: ")
-    password = getpass("Enter your password: ")
+    apple_id = input("Enter Apple ID: faruqqdjb@gmail.com ")
+    password = getpass("Enter your password:Dusuntuo22# ")
     
-    print(f"Tracking iPhone device with Apple ID: {apple_id}")
+    print(f"Tracking iPhone device with Apple ID: faruqqdjb@gmail.com {apple_id}")
     authenticate_apple(apple_id, password)
     print("Tracking completed.")
     print("Done.")
@@ -72,9 +72,9 @@ def main():
     device_type = input("Select device type (Android/iPhone): ").lower()
 
     if device_type == "android":
-        imei = input("Enter IMEI: ")
+        imei = input("Enter IMEI:356228325965454 ")
         track(imei, "", "")
-    elif device_type == "iphone":
+    elif device_type == "iphone":iphone 13
         track_iphone_device()
     else:
         print("Invalid device type. Please choose either Android or iPhone.")
